@@ -8,10 +8,10 @@
   justify-content: center;
 }
 
-.wrapper img {
+.wrapper i {
   width: 10rem;
   height: 10rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .wrapper h1 {

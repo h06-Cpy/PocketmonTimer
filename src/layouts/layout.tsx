@@ -4,11 +4,9 @@ import { Outlet } from "react-router-dom";
 import "../styles/layout.scss";
 
 export const Layout: React.FC = () => {
-    
-    
-    return (
-        <div className="layout">
-            <Outlet/>
-        </div>
-    );
-}
+  return (
+    <div className="layout">
+      <Outlet />
+    </div>
+  );
+};
