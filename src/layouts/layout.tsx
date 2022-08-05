@@ -14,7 +14,7 @@ export const Layout: React.FC = () => {
                 <div className="header">
                     <div className="nes-btn username">{username}</div>
                     <div className="nes-btn is-warning icon">
-                        <img src="/bag.png"/>
+                        <img src="/bag.png" alt="bag"/>
                     </div>
                 </div>
             }
