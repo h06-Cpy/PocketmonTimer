@@ -1,3 +1,7 @@
 html, body, pre, code, kbd, samp {
     font-family: "Press Start 2P", monospace;
 }
+
+body {
+    background: #bd2f2f;
+}
