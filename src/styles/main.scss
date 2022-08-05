@@ -39,7 +39,15 @@
     font-size: 1rem;
   }
 
-  .nes-badge.is-splited > .is-warning {
-    width: auto !important;
+  .nes-badge.is-splited {
+    width: calc(100% - 1rem);
+  }
+
+  .nes-badge.is-splited > span:first-child {
+    width: 35%;
+  }
+
+  .nes-badge.is-splited > span:last-child {
+    width: 65%;
   }
 }

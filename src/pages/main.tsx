@@ -9,10 +9,11 @@ export const Main: React.FC = () => {
     return (
         <div className="main">
             {/*<h2>SnowSuno</h2>*/}
-            
-            <div className="nes-badge is-splited">
-                <span className="is-dark">Lv.2</span>
-                <span className="is-warning">Pikachu</span>
+            <div>
+                <div className="nes-badge is-splited">
+                    <span className="is-dark">Lv.2</span>
+                    <span className="is-warning">Pikachu</span>
+                </div>
             </div>
             <div className="ratio nes-container">
                 <div className="nes-container is-dark">
