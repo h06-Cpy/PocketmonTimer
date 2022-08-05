@@ -4,9 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 import classNames from "classnames";
 import "../styles/home.scss";
-import { client } from "../api/client";
+import { client, UserData } from "../api/client";
 
-export const Home: React.FC = () => {
+
+
+export const Home: React.FC<{
+    fetch: (username: string) => Promise<void>
+}> = ({fetch}) => {
     const navigate = useNavigate();
     const [username, setUsername] = useState("");
     const [state, setState] = useState<"normal" | "loading" | "error">("normal");
@@ -17,14 +21,14 @@ export const Home: React.FC = () => {
     
     const onClick = () => {
         setState("loading");
-        client.get(`/users/${username}`)
-            .then(() => navigate(`/${username}`))
+        fetch(username)
+            .then(() =>  navigate(username))
             .catch(() => setState("error"));
     };
     
     return (
         <div className="home">
-            <div className="icon">
+            <div className="poke-icon">
                 <i className="nes-icon nes-pokeball"/>
             </div>
             <h1>CommitMon</h1>

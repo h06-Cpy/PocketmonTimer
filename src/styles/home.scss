@@ -7,12 +7,6 @@
   align-items: center;
   justify-content: center;
 
-  .icon {
-    width: 168px;
-    height: 168px;
-
-    margin-bottom: 2rem;
-  }
 
   h1 {
     margin-bottom: 3rem;
@@ -34,4 +28,11 @@
   .form-wrapper button {
     width: 20rem;
   }
+}
+
+.poke-icon {
+  width: 168px;
+  height: 168px;
+
+  margin-bottom: 2rem;
 }
