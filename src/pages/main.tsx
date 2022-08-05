@@ -1,14 +1,10 @@
 import React from "react";
 import "../styles/main.scss";
 
-import { useParams } from "react-router-dom";
-
 export const Main: React.FC = () => {
-    const { username } = useParams();
     
     return (
         <div className="main">
-            {/*<h2>SnowSuno</h2>*/}
             <div>
                 <div className="nes-badge is-splited">
                     <span className="is-dark">Lv.2</span>
@@ -31,8 +27,6 @@ export const Main: React.FC = () => {
             />
             
             <div className="desc">5 commits until next evolution...</div>
-            
-            {/*<button className="nes-btn is-warning">My collections</button>*/}
         </div>
     
     );
