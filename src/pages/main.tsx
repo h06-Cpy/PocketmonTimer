@@ -7,11 +7,14 @@ export const Main: React.FC = () => {
     const { username } = useParams();
     
     return (
-        <div className="main nes-container">
-            <h2>SnowSuno</h2>
+        <div className="main">
+            {/*<h2>SnowSuno</h2>*/}
             
-            <h4 style={{ width: "100%" }}>Pikachu</h4>
-            <div className="ratio">
+            <div className="nes-badge is-splited">
+                <span className="is-dark">Lv.2</span>
+                <span className="is-warning">Pikachu</span>
+            </div>
+            <div className="ratio nes-container">
                 <div className="nes-container is-dark">
                     <img
                         src="https://i.some-random-api.ml/pokemon/pikachu.gif"

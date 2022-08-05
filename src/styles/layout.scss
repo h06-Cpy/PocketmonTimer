@@ -2,5 +2,15 @@
   max-width: 768px;
   margin: 0 auto;
   padding: 1rem;
-  background: inherit;
+  height: 100%;
+
+  & > .nes-btn {
+    pointer-events: none;
+  }
+
+  & > .nes-container {
+    margin-top: 0.8rem;
+    background: #fffff3;
+    height: 80%;
+  }
 }

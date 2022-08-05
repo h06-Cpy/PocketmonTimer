@@ -12,7 +12,6 @@ export const Home: React.FC = () => {
 
   return (
     <div className="wrapper">
-      <img src="../../public/pokeball.png" />
       <h1>CommitMon</h1>
       <div className="form-wrapper">
         <input
