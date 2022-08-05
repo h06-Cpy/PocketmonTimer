@@ -5,6 +5,8 @@ import { Home } from "./pages/home";
 import { Main } from "./pages/main";
 import { Layout } from "./layouts/layout";
 
+import "./index.css";
+
 function App() {
     return (
         <Routes>
