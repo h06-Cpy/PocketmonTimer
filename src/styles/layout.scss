@@ -4,13 +4,48 @@
   padding: 1rem;
   height: 100%;
 
-  & > .nes-btn {
+  .nes-btn.username {
     pointer-events: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .icon {
+      padding: 0;
+    }
+
+    img {
+      width: auto;
+      height: 2.5rem;
+    }
   }
 
   & > .nes-container {
     margin-top: 0.8rem;
     background: #fffff3;
     height: 80%;
+    overflow-y: scroll;
+  }
+
+  & > .buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+
+  button.display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.46);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }

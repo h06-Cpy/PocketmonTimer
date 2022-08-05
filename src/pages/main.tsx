@@ -31,7 +31,7 @@ export const Main: React.FC = () => {
             
             <div className="desc">5 commits until next evolution...</div>
             
-            <button className="nes-btn is-warning">My collections</button>
+            {/*<button className="nes-btn is-warning">My collections</button>*/}
         </div>
     
     );
