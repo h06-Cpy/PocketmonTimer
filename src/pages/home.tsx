@@ -12,6 +12,7 @@ export const Home: React.FC = () => {
 
   return (
     <div className="wrapper">
+      <i className="nes-icon nes-pokeball" />
       <h1>CommitMon</h1>
       <div className="form-wrapper">
         <input
