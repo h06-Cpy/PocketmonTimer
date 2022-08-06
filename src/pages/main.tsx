@@ -46,11 +46,11 @@ export const Main: React.FC<{
                     
                     <progress
                         className="nes-progress is-success"
-                        value={data.current_commits % 5}
-                        max="5"
+                        value={data.current_commits % 10}
+                        max="10"
                     />
                     
-                    <div className="desc">5 commits until next evolution...</div>
+                    <div className="desc">{10 - (data.current_commits % 10)} commits until next evolution...</div>
                 </>
                 : <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                     <h3>Create Pokemon</h3>
