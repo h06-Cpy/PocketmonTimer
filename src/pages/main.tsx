@@ -65,7 +65,8 @@ export const Main: React.FC<{
                         )}
                         onClick={create}
                         style={{width: "100%"}}
-                    >Create
+                    >
+                        Create
                     </button>
                 
                 </div> : <div>Loading...</div>
