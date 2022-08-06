@@ -68,7 +68,7 @@ export const Main: React.FC<{
                     >Create
                     </button>
                 
-                </div> : <div>Loading...</div>
+                </div> : <div>Lo ading...</div>
             }
         </div>
     
