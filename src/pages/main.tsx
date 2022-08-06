@@ -33,12 +33,12 @@ export const Main: React.FC<{
                 ? <>
                     <div className="nes-badge is-splited">
                         <span className="is-dark">Lv.2</span>
-                        <span className="is-warning">Pikachu</span>
+                        <span className="is-warning">{data.current_pokemon}</span>
                     </div>
                     <div className="ratio nes-container">
                         <div className="nes-container is-dark">
                             <img
-                                src="https://i.some-random-api.ml/pokemon/pikachu.gif"
+                                src={`https://i.some-random-api.ml/pokemon/${data.current_pokemon}.gif`}
                                 alt=""
                             />
                         </div>
@@ -46,11 +46,11 @@ export const Main: React.FC<{
                     
                     <progress
                         className="nes-progress is-success"
-                        value={data.current_commits % 10}
+                        value={data.current_commits}
                         max="10"
                     />
                     
-                    <div className="desc">{10 - (data.current_commits % 10)} commits until next evolution...</div>
+                    <div className="desc">{10 - (data.current_commits)} commits until next evolution...</div>
                 </>
                 : <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                     <h3>Create Pokemon</h3>
